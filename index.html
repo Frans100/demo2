@@ -5,16 +5,40 @@
             function voegIemandToe()
             {
             var node = document.createElement("LI");  // Create a <li> node
-            var sNaam=document.getElementById("naam").value;
+            var sNaam=document.getElementById("myNewName").value;
             var textnode = document.createTextNode(sNaam);   // Create a text node
-
-node.appendChild(textnode);                              // Append the text to <li>
-document.getElementById("myList").appendChild(node);     // Append <li> to <ul> with id="myList"
+            node.appendChild(textnode);                              // Append the text to <li>
+            document.getElementById("myList").appendChild(node);     // Append <li> to <ul> with id="myList"
             }
+
+            function myFilterFunction()
+            {
+      
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById("myFilterBox");
+  filter = input.value.toUpperCase();
+  
+  ul = document.getElementById("myList");
+  li = ul.getElementsByTagName('li');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+  txtValue=li[i].innerHTML;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
             </script>
         </head>
-        <input id="naam" type="text" placeholder="New...">
-        <button onclick="voegIemandToe()">Add</button>
+        <body>
+
+        <input id="myFilterBox" type="text" onkeyup="myFilterFunction();" placeholder="New...">
+        <input id="myNewName" type="text" placeholder="New...">
+        <button onclick="voegIemandToe();">Add</button>
         <ul id="myList">
             <li>Floris</li>
             <li>Kees</li>
