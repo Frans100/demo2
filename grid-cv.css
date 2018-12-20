@@ -1,15 +1,20 @@
 .container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 40px auto 50px auto 200px;
+    grid-template-rows: 100px auto 50px auto 200px;
     grid-gap: 3px;
     
 }
 
+
+nav {
+    display: inline-block;
+}
 .header {
     grid-column: 1 /-1;
     background-color: red;
 }
+
 .foto {
     grid-column: 1 /2;
 
