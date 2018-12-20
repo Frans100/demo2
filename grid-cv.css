@@ -11,7 +11,7 @@
     background-color: red;
 }
 .foto {
-    grid-auto-columns: 1 / 3;
+    grid-column: 1 /2;
 
 }
 
@@ -50,6 +50,9 @@ p.naam {
     font-size: 20px;
 }
 
-span {
+span.cursief {
+    font-style: italic;
+}
+span.bold {
     font-weight: bold;
 }
