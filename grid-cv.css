@@ -1,53 +1,55 @@
 .container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 100px auto 50px auto 200px;
+    grid-template-rows: 20px auto auto 50px;
     grid-gap: 3px;
     
 }
-
-
-nav {
-    display: inline-block;
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .header {
     grid-column: 1 /-1;
-    background-color: red;
+    background-color: #5aa1cf;
 }
 
 .foto {
     grid-column: 1 /2;
+    text-align: center;
 
 }
 
 .person {
     grid-column: 2 / -1;
     grid-row: auto;
-    background-color: yellow;
-}
-
-.tussenkop {
-    grid-column: 1 / -1;
-    grid-row: 50px;
-    background-color: blue;
+    background-color: #fbf579;
+    padding-left: 10px;
+    text-align: center;
 }
 
     .werk {
-        grid-column: 1 / 7;
+        grid-column: 1 / 6;
         grid-row: auto;
-        background-color: royalblue;
+        background-color: #fa625f;
+        padding-left: 10px;
     }
 
     .opleiding {
-        grid-column: 7 / -1;
+        grid-column: 6 / -1;
         grid-row: auto;
-        background-color: blue;
+        background-color: #5aa1cf;
+        padding-left: 10px;
     }
 
 
 .footer {
     grid-column: 1 / -1;
     background-color: green;
+}
+
+h2 {
+    text-align: center;
 }
 
 p.naam {
@@ -60,4 +62,8 @@ span.cursief {
 }
 span.bold {
     font-weight: bold;
+    
+}
+ul {
+    list-style: none;
 }
