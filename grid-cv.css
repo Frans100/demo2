@@ -1,9 +1,8 @@
 .container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 20px auto auto 50px;
-    grid-gap: 3px;
-    
+    grid-template-rows: 20px auto auto 25px;
+    grid-gap: 3px;    
 }
 
 body {
@@ -19,8 +18,12 @@ body {
 
 .foto {
     grid-column: 1 /2;
-    text-align: center;
+    background-color: #379683;
 
+}
+img {
+    height: 325px;
+    border-radius: 50%;
 }
 
 .person {
@@ -29,8 +32,7 @@ body {
     background-color: #379683;
     padding-left: 10px;
     text-align: center;
-    
-}
+ }
 
     .werk {
         grid-column: 1 / 6;
@@ -44,20 +46,18 @@ body {
         grid-row: auto;
         background-color: #557a95;
         padding-left: 10px;
-    
-    }
+        }
 
 
 .footer {
     grid-column: 1 / -1;
     background-color: #b1a296;
+    font-weight: bold;
 }
 
 h2 {
     text-align: center;
-    color: #bddbef;
-    background=color
-
+    color: #123c69 !important;
 }
 
 p.naam {
