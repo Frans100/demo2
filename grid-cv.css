@@ -5,13 +5,16 @@
     grid-gap: 3px;
     
 }
+
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
     grid-column: 1 /-1;
-    background-color: #5aa1cf;
+    background-color: #5d5c61;
 }
 
 .foto {
@@ -23,37 +26,41 @@ body {
 .person {
     grid-column: 2 / -1;
     grid-row: auto;
-    background-color: #fbf579;
+    background-color: #379683;
     padding-left: 10px;
     text-align: center;
+    
 }
 
     .werk {
         grid-column: 1 / 6;
         grid-row: auto;
-        background-color: #fa625f;
+        background-color: #7395ae;
         padding-left: 10px;
     }
 
     .opleiding {
         grid-column: 6 / -1;
         grid-row: auto;
-        background-color: #5aa1cf;
+        background-color: #557a95;
         padding-left: 10px;
+    
     }
 
 
 .footer {
     grid-column: 1 / -1;
-    background-color: green;
+    background-color: #b1a296;
 }
 
 h2 {
     text-align: center;
+    color: #bddbef;
+    background=color
+
 }
 
 p.naam {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
 }
 
